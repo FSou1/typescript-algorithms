@@ -1,0 +1,37 @@
+{
+  "name": "typescript-algorithms-and-data-structures",
+  "version": "1.0.0",
+  "description": "Algorithms and data structures implemented in TypeScript",
+  "author": "Maxim Zhukov (https://www.linkedin.com/in/maxim-zhukov-0648a8b5)",
+  "scripts": {
+    "lint": "eslint ./src/*",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FSou1/typescript-algorithms.git"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "eslint": "^6.8.0",
+    "eslint-config-google": "^0.14.0",
+    "jest": "^25.3.0",
+    "ts-jest": "^25.3.1",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {},
+  "keywords": [
+    "typescript",
+    "algorithms",
+    "computer-science",
+    "data-structures",
+    "education"
+  ],
+  "bugs": {
+    "url": "https://github.com/FSou1/typescript-algorithms/issues"
+  },
+  "homepage": "https://github.com/FSou1/typescript-algorithms#readme",
+  "license": "MIT"
+}
