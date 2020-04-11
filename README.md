@@ -1,4 +1,4 @@
-# typescript-algorithms
+# TypeScript Algorithms and Data structures
 🔖 Algorithms and data structures implemented in TypeScript
 
 ## Algorithms
