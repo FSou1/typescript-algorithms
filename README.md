@@ -10,6 +10,8 @@ An algorithm is a finite sequence of well-defined, computer-implementable instru
 * **Search**
   * [Peak Finder (1d version)](src/algorithms/search/peak-finder/1d) - find a peak in a one-dimensional array;
   * [Peak Finder (2d version)](src/algorithms/search/peak-finder/2d) - find a peak a two-dimensional array;
+* **String**
+  * [Document distance](/src/algorithms/string/document-distance) - measure similarity between two strings;
 
 ## How to use this repository
 
