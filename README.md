@@ -12,6 +12,8 @@ An algorithm is a finite sequence of well-defined, computer-implementable instru
   * [Peak Finder (2d version)](src/algorithms/search/peak-finder/2d) - find a peak a two-dimensional array;
 * **String**
   * [Document distance](/src/algorithms/string/document-distance) - measure similarity between two strings;
+* **Sort**
+  * [Insertion sort](/src/algorithms/sort/insertion/simple) - sort an array with a simple insertion algorithm;
 
 ## How to use this repository
 
