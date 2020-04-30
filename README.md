@@ -15,6 +15,7 @@ An algorithm is a finite sequence of well-defined, computer-implementable instru
 * **Sort**
   * [Insertion sort](/src/algorithms/sort/insertion/simple) - sort an array with a simple insertion algorithm;
   * [Merge sort](/src/algorithms/sort/merge) - sort an array with a merge sort algorithm;
+  * [Heapsort](/src/algorithms/sort/heapsort) - sort an array with a heapsort algorithm;
 
 ## How to use this repository
 
