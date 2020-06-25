@@ -1,6 +1,13 @@
 # TypeScript Algorithms and Data structures
 🔖 Algorithms and data structures implemented in TypeScript
 
+## Data structures
+
+A data structure is a data organization, management, and storage format that enables efficient access and modification. More precisely, a data structure is a collection of data values, the relationships among them, and the functions or operations that can be applied to the data.
+
+* [Queue](src/data-structures/queue) - a data structure to follow the FIFO principle;
+* [Graph](src/data-structures/graph) - a set of vertices and edges;
+
 ## Algorithms
 
 An algorithm is a finite sequence of well-defined, computer-implementable instructions, typically to solve a class of problems or to perform a computation.
@@ -18,6 +25,8 @@ An algorithm is a finite sequence of well-defined, computer-implementable instru
   * [Heapsort](/src/algorithms/sort/heapsort) - sort an array with a heapsort algorithm;
   * [Counting sort](/src/algorithms/sort/counting) - sort an array with a counting sort algorithm;
   * [Radix sort](/src/algorithms/sort/radix) - sort an array with a radix sort algorithm;
+* **Graph**
+  * [Breadth-first search](/src/algorithms/graph/breadth-first-search) - traverse a graph, explore neighbor vertices first;
 
 ## How to use this repository
 
