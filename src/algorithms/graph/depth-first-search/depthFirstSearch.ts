@@ -2,7 +2,6 @@
 import {Graph} from '../../../data-structures/graph/graph';
 import {GraphVertex} from '../../../data-structures/graph/graphVertex';
 import {GraphConfig} from '../../../data-structures/graph/graphConfig';
-import {Queue} from '../../../data-structures/queue/queue';
 
 /**
  *
@@ -12,7 +11,7 @@ import {Queue} from '../../../data-structures/queue/queue';
  * @param {GraphVertex} startVertex
  * @param {GraphConfig} config
  */
-export function breadthFirstSearch(
+export function depthFirstSearch(
     graph: Graph,
     startVertex: GraphVertex,
     config: GraphConfig = null,
@@ -26,23 +25,29 @@ export function breadthFirstSearch(
   }
 
   config = initConfig(config);
+  depthFirstSearchRecursive(graph, startVertex, config);
+}
 
-  const queue = new Queue<GraphVertex>();
-  queue.enqueue(startVertex);
+/**
+ *
+ *
+ * @param {Graph} graph
+ * @param {GraphVertex} currentVertex
+ * @param {GraphConfig} config
+ */
+function depthFirstSearchRecursive(
+    graph: Graph,
+    currentVertex: GraphVertex,
+    config: GraphConfig,
+) {
+  config.enterVertex(currentVertex);
 
-  while (!queue.isEmpty()) {
-    const currentVertex = queue.dequeue();
-    config.enterVertex(currentVertex);
-
-    const neighbors = graph.getNeighbors(currentVertex);
-    for (const neighbor of neighbors) {
-      if (config.allowEnterVertex(neighbor)) {
-        queue.enqueue(neighbor);
-      }
-    }
-
-    config.leaveVertex(currentVertex);
+  const neighbors = graph.getNeighbors(currentVertex);
+  for (const neighbor of neighbors) {
+    depthFirstSearch(graph, neighbor, config);
   }
+
+  config.leaveVertex(currentVertex);
 }
 
 /**
@@ -64,12 +69,12 @@ function initConfig(config: GraphConfig): GraphConfig {
 function isFirstEnter(): (vertex: GraphVertex) => boolean {
   const visited = {};
 
-  return ((next: GraphVertex) => {
+  return (next: GraphVertex) => {
     if (!visited[next.getKey()]) {
       visited[next.getKey()] = true;
       return true;
     }
 
     return false;
-  });
+  };
 }
