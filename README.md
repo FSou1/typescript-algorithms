@@ -1,5 +1,8 @@
 # TypeScript Algorithms and Data structures
-🔖 Algorithms and data structures implemented in TypeScript
+
+![CI](https://github.com/FSou1/typescript-algorithms/workflows/CI/badge.svg?branch=master)
+
+🔖 Algorithms and data structures implemented in TypeScript.
 
 ## Data structures
 
@@ -18,15 +21,15 @@ An algorithm is a finite sequence of well-defined, computer-implementable instru
   * [Peak Finder (1d version)](src/algorithms/search/peak-finder/1d) - find a peak in a one-dimensional array;
   * [Peak Finder (2d version)](src/algorithms/search/peak-finder/2d) - find a peak a two-dimensional array;
 * **String**
-  * [Document distance](/src/algorithms/string/document-distance) - measure similarity between two strings;
+  * [Document distance](src/algorithms/string/document-distance) - measure similarity between two strings;
 * **Sort**
-  * [Insertion sort](/src/algorithms/sort/insertion/simple) - sort an array with a simple insertion algorithm;
-  * [Merge sort](/src/algorithms/sort/merge) - sort an array with a merge sort algorithm;
-  * [Heapsort](/src/algorithms/sort/heapsort) - sort an array with a heapsort algorithm;
-  * [Counting sort](/src/algorithms/sort/counting) - sort an array with a counting sort algorithm;
-  * [Radix sort](/src/algorithms/sort/radix) - sort an array with a radix sort algorithm;
+  * [Insertion sort](src/algorithms/sort/insertion/simple) - sort an array with a simple insertion algorithm;
+  * [Merge sort](src/algorithms/sort/merge) - sort an array with a merge sort algorithm;
+  * [Heapsort](src/algorithms/sort/heapsort) - sort an array with a heapsort algorithm;
+  * [Counting sort](src/algorithms/sort/counting) - sort an array with a counting sort algorithm;
+  * [Radix sort](src/algorithms/sort/radix) - sort an array with a radix sort algorithm;
 * **Graph**
-  * [Breadth-first search](/src/algorithms/graph/breadth-first-search) - traverse a graph, explore neighbor vertices first;
+  * [Breadth-first search](src/algorithms/graph/breadth-first-search) - traverse a graph, explore neighbor vertices first;
 
 ## How to use this repository
 
