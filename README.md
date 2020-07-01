@@ -30,6 +30,7 @@ An algorithm is a finite sequence of well-defined, computer-implementable instru
   * [Radix sort](src/algorithms/sort/radix) - sort an array with a radix sort algorithm;
 * **Graph**
   * [Breadth-first search](src/algorithms/graph/breadth-first-search) - traverse a graph, explore neighbor vertices first;
+  * [Depth-first search](src/algorithms/graph/depth-first-search) - traverse a graph, explore descendant vertices first;
 
 ## How to use this repository
 
