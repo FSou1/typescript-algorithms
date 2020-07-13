@@ -9,8 +9,8 @@ import {GraphEdge} from './graphEdge';
  * @class Graph
  */
 export class Graph {
-  directed: boolean;
-  verticies: {};
+  private directed: boolean;
+  private verticies: {};
 
   /**
    * Creates an instance of Graph.
@@ -70,12 +70,37 @@ export class Graph {
   }
 
   /**
+   *
+   *
+   * @return {GraphVertex[]}
+   * @memberof Graph
+   */
+  getVertices(): GraphVertex[] {
+    return Object.keys(this.verticies).map((k) => this.verticies[k]) || null;
+  }
+
+  /**
    * @param {GraphVertex} vertex
    * @return {GraphVertex[]}
    * @memberof Graph
    */
   getNeighbors(vertex: GraphVertex): GraphVertex[] {
     return this.getVertex(vertex).getNeighbors();
+  }
+
+  /**
+   * @param {GraphVertex} start
+   * @param {GraphVertex} end
+   * @return {GraphEdge}
+   * @memberof Graph
+   */
+  findEdge(start: GraphVertex, end: GraphVertex): GraphEdge {
+    const vertex = this.getVertex(start);
+    if (!vertex) {
+      return null;
+    }
+
+    return vertex.findEdge(end);
   }
 
   /**

@@ -4,7 +4,7 @@
   "description": "Algorithms and data structures implemented in TypeScript",
   "author": "Maxim Zhukov (https://www.linkedin.com/in/maxim-zhukov-0648a8b5)",
   "scripts": {
-    "lint": "eslint ./src/*",
+    "lint": "eslint ./src/**/*.ts",
     "test": "jest"
   },
   "repository": {

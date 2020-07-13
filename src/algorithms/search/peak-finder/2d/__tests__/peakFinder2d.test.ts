@@ -14,7 +14,6 @@ test('a peak of [2x2] is 3', () => {
     [2, 3],
   ];
   const peak = 3;
-  debugger;
   expect(findPeak(arr)).toBe(peak);
 });
 

@@ -1,5 +1,6 @@
-// eslint-disable-next-line no-unused-vars
+/* eslint-disable no-unused-vars */
 import {GraphEdge} from './graphEdge';
+import {Graph} from './graph';
 
 /**
  *
@@ -8,8 +9,8 @@ import {GraphEdge} from './graphEdge';
  * @class GraphVertex
  */
 export class GraphVertex {
-  key: string;
-  edges: GraphEdge[];
+  private key: string;
+  private edges: GraphEdge[];
 
   /**
    *Creates an instance of GraphVertex.
@@ -37,6 +38,19 @@ export class GraphVertex {
   addEdge(edge: GraphEdge): GraphVertex {
     this.edges.push(edge);
     return this;
+  }
+
+  /**
+   * @param {GraphVertex} vertex
+   * @return {GraphEdge}
+   * @memberof GraphVertex
+   */
+  findEdge(vertex: GraphVertex): GraphEdge {
+    const edge = this.edges.filter((edge) => {
+      return edge.startVertex === vertex || edge.endVertex === vertex;
+    });
+
+    return edge[0] ?? null;
   }
 
   /**
