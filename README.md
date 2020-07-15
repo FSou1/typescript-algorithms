@@ -32,6 +32,7 @@ An algorithm is a finite sequence of well-defined, computer-implementable instru
   * [Breadth-first search](src/algorithms/graph/breadth-first-search) - traverse a graph, explore neighbor vertices first;
   * [Depth-first search](src/algorithms/graph/depth-first-search) - traverse a graph, explore descendant vertices first;
   * [Dijkstra](src/algorithms/graph/dijkstra) - find the shortest path between two vertices in a graph, return a shortest-path tree;
+  * [Bellman-Ford](src/algorithms/graph/bellman-ford) - find the shortest path in a graph with negative edges, return a shortest-path tree;
 
 ## How to use this repository
 
