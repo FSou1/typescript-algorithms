@@ -64,4 +64,12 @@ export class GraphVertex {
       return edge.startVertex === this ? edge.endVertex : edge.startVertex;
     });
   }
+
+  /**
+   * @return {GraphEdge[]}
+   * @memberof GraphVertex
+   */
+  getEdges(): GraphEdge[] {
+    return this.edges;
+  }
 }

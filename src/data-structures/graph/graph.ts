@@ -76,7 +76,17 @@ export class Graph {
    * @memberof Graph
    */
   getVertices(): GraphVertex[] {
-    return Object.keys(this.verticies).map((k) => this.verticies[k]) || null;
+    return Object.keys(this.verticies).map((k) => this.verticies[k]);
+  }
+
+  /**
+   *
+   *
+   * @return {GraphEdge[]}
+   * @memberof Graph
+   */
+  getEdges(): GraphEdge[] {
+    return [].concat(...this.getVertices().map((v) => v.getEdges()));
   }
 
   /**

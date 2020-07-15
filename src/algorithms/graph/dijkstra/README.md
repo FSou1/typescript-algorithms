@@ -6,6 +6,8 @@ The algorithm exists in many variants. Dijkstra's original algorithm found the s
 
 ## Applications
 
+Same as the others algorithms (e.g. Bellman-Ford) for finding the shortest path:
+
 * Searching for a shortest path
 * Build an optimal path at geographical maps
 * Network routing protocols
