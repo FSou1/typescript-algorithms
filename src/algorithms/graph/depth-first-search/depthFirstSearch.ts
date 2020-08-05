@@ -44,7 +44,9 @@ function depthFirstSearchRecursive(
 
   const neighbors = graph.getNeighbors(currentVertex);
   for (const neighbor of neighbors) {
-    depthFirstSearch(graph, neighbor, config);
+    if (config.allowEnterVertex(neighbor)) {
+      depthFirstSearch(graph, neighbor, config);
+    }
   }
 
   config.leaveVertex(currentVertex);

@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 import {GraphEdge} from './graphEdge';
-import {Graph} from './graph';
 
 /**
  *
