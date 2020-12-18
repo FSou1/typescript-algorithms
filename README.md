@@ -10,6 +10,7 @@ A data structure is a data organization, management, and storage format that ena
 
 * [Queue](src/data-structures/queue) - a data structure to follow the FIFO principle;
 * [Graph](src/data-structures/graph) - a set of vertices and edges;
+* [Stack](src/data-structures/stack) - a data structure to follow the LIFO principle;
 
 ## Algorithms
 
