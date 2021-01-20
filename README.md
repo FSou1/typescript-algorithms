@@ -13,6 +13,7 @@ A data structure is a data organization, management, and storage format that ena
 * [Stack](src/data-structures/stack) - a data structure to follow the LIFO principle;
 * [Linked list](src/data-structures/linked-list) - a data structure to follow the FIFO principle;
 * [Vector](src/data-structures/vector) - is used to represent the mathematical vector used in linear algebra;
+* [Hash table](src/data-structures/hash-table) - is used for lookup, where keys are hashed;
 
 ## Algorithms
 
