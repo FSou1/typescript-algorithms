@@ -147,7 +147,7 @@ describe('LinkedList', () => {
       .prepend(nodeValue2);
 
     const nodeStringifier = (value) => `${value.key}:${value.value}`;
-debugger;
+
     expect(linkedList.toString(nodeStringifier)).toBe('key2:2,key1:1');
   });
 
