@@ -27,6 +27,7 @@ An algorithm is a finite sequence of well-defined, computer-implementable instru
   * [Binary search](src/algorithms/search/binary) - find a position of the element in a sorted one-dimensional array;
 * **String**
   * [Document distance](src/algorithms/string/document-distance) - measure similarity between two strings;
+  * [Is unique](src/algorithms/string/unique) - check a string for uniqueness;
 * **Sort**
   * [Insertion sort](src/algorithms/sort/insertion/simple) - sort an array with a simple insertion algorithm;
   * [Merge sort](src/algorithms/sort/merge) - sort an array with a merge sort algorithm;
