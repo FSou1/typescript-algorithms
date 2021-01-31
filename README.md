@@ -29,6 +29,7 @@ An algorithm is a finite sequence of well-defined, computer-implementable instru
   * [Document distance](src/algorithms/string/document-distance) - measure similarity between two strings;
   * [Is unique](src/algorithms/string/unique) - check a string for uniqueness;
   * [Check permutation](src/algorithms/string/permutation) - check if a string is a permutation of the other;
+  * [URLify](src/algorithms/string/urlify) - replace all spaces in a string with '%20';
 * **Sort**
   * [Insertion sort](src/algorithms/sort/insertion/simple) - sort an array with a simple insertion algorithm;
   * [Merge sort](src/algorithms/sort/merge) - sort an array with a merge sort algorithm;
